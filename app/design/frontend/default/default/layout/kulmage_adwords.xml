@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!--
+ *
+ *
+ * @package    Kulmage Google Adwords
+ * @author     Kuldip, Magento Developer 
+ *
+-->
+<layout version="0.1.0">
+	<checkout_onepage_success>
+		<reference name="content">
+            <block type="kulmage_adwords/adwords" name="kulmage.adwords" />
+        </reference>
+	</checkout_onepage_success>	
+</layout>

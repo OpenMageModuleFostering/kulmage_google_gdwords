@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<!--
+ *
+ *
+ * @package    Kulmage Google Adwords
+ * @author     Kuldip, Magento Developer 
+ *
+-->
+<config>
+    <modules>
+        <Kulmage_Adwords>
+             <version>1.0.0</version>
+        </Kulmage_Adwords>
+    </modules>
+    <global>
+        <blocks>
+            <kulmage_adwords>
+                <class>Kulmage_Adwords_Block</class>
+            </kulmage_adwords>
+        </blocks>
+        <helpers>
+            <kulmage_adwords>
+                <class>Kulmage_Adwords_Helper</class>
+            </kulmage_adwords>
+        </helpers>
+    </global>
+    
+    <frontend>
+      <layout>
+          <updates>
+              <kulmage_adwords>
+                  <file>kulmage_adwords.xml</file>
+              </kulmage_adwords>
+          </updates>
+      </layout>
+    </frontend>
+    
+    <adminhtml>
+		<acl>
+			<resources>
+				<all>
+					<title>Allow Everything</title>
+				</all>
+				<admin>
+					<children>
+						<system>
+							<children>
+								<config>
+									<children>
+										<adwordsmodule>
+											<title>Kulmage Adwords</title>
+										</adwordsmodule>
+									</children>
+								</config>
+							</children>
+						</system>
+					</children>
+				</admin>
+			</resources>
+		</acl>
+	</adminhtml>	
+</config>
