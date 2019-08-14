@@ -15,6 +15,7 @@ class Kulmage_Adwords_Block_Adwords extends Mage_Core_Block_Abstract
     	$this->setGoogleConversionFormat(Mage::getStoreConfig('adwordsmodule/kulmage/google_conversion_format'));
     	$this->setGoogleConversionColor(Mage::getStoreConfig('adwordsmodule/kulmage/google_conversion_color'));
     	$this->setGoogleConversionLabel(Mage::getStoreConfig('adwordsmodule/kulmage/google_conversion_label'));
+		$this->setGoogleConversionCurrencyFormat(Mage::getStoreConfig('adwordsmodule/kulmage/currency'));
     }
 	
 	
@@ -34,9 +35,13 @@ class Kulmage_Adwords_Block_Adwords extends Mage_Core_Block_Abstract
 	var google_conversion_format = "'.$this->getGoogleConversionFormat().'";
 	var google_conversion_color = "'.$this->getGoogleConversionColor().'";
 	var google_conversion_label = "'.$this->getGoogleConversionLabel().'";
-	var google_conversion_value = 0;
+	
 	if ('.$this->getAmount().') {
-  	google_conversion_value = '.$this->getAmount().';
+  	var google_conversion_value = '.$this->getAmount().';
+	}
+	else
+	{
+	var google_conversion_value = 0;
 	}
 	/* ]]> */
 	</script>

@@ -1,21 +1,22 @@
 <?xml version="1.0"?>
 <package>
     <name>kulmage_google_gdwords</name>
-    <version>1.1.0</version>
+    <version>1.2.0</version>
     <stability>stable</stability>
-    <license uri="http://www.opensource.org/licenses/osl-3.0.php">OSL v3.0</license>
+    <license>OSL v3.0</license>
     <channel>community</channel>
     <extends/>
     <summary>Kulmage_Adwords is used to add google adwords in magento website</summary>
-    <description>Kulmage_Adwords is used to add google adwords in magento website.&#xD;
-you can manage it from admin just add credential from admin and thats it you can check adwords data in success page by view source</description>
-    <notes>Kulmage_Adwords is used to add google adwords in magento website.&#xD;
-&#xD;
+    <description>Kulmage_Adwords is used to add google adwords in magento website.&amp;#xD;&#xD;
+you can manage it from admin just add credential from admin and thats it you can check adwords data in success page by view source&lt;/description&gt;&#xD;
+</description>
+    <notes>Kulmage_Adwords is used to add google adwords in magento website.&amp;#xD;&#xD;
+&amp;#xD;&#xD;
 This version is stable</notes>
     <authors><author><name>Kuldip</name><user>kuldipsinh</user><email>er.kuldipsinh@gmail.com</email></author></authors>
-    <date>2012-12-03</date>
-    <time>04:30:28</time>
-    <contents><target name="magecommunity"><dir name="Kulmage"><dir name="Adwords"><dir name="Block"><file name="Adwords.php" hash="2778007f87b1b6be193e3434b58c7e2a"/></dir><dir name="Helper"><file name="Data.php" hash="51fccc45f1569d8ff2723b1bc0a1904d"/></dir><dir name="etc"><file name="config.xml" hash="93a7df2290a266b54d176c87a4b196c0"/><file name="system.xml" hash="0195be66bdec3df0665704e2c401b66e"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Kulmage_Adwords.xml" hash="8a83b1bbad56e45846620d92f31f320f"/></dir></target><target name="magedesign"><dir name="frontend"><dir name="default"><dir name="default"><dir name="layout"><file name="kulmage_adwords.xml" hash="f0cb4564a6c971c6d5797c1b5d198a9b"/></dir></dir></dir></dir></target></contents>
+    <date>2013-06-13</date>
+    <time>09:40:30</time>
+    <contents><target name="magecommunity"><dir name="Kulmage"><dir name="Adwords"><dir name="Block"><file name="Adwords.php" hash="174ef3566f06de2619bc79cd41adc6b0"/></dir><dir name="Helper"><file name="Data.php" hash="8a6e557bc9585b9663e03a4253aacf9c"/></dir><dir name="etc"><file name="config.xml" hash="93a7df2290a266b54d176c87a4b196c0"/><file name="system.xml" hash="43fad71c5d496599e3980f701fec6bbb"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Kulmage_Adwords.xml" hash="8a83b1bbad56e45846620d92f31f320f"/></dir></target><target name="magedesign"><dir name="frontend"><dir name="default"><dir name="default"><dir name="layout"><file name="Kulmage_Adwords.xml" hash="f0cb4564a6c971c6d5797c1b5d198a9b"/></dir></dir></dir></dir></target></contents>
     <compatible/>
     <dependencies><required><php><min>5.2.0</min><max>6.0.0</max></php></required></dependencies>
 </package>

@@ -13,14 +13,15 @@ class Kulmage_Adwords_Helper_Data extends Mage_Core_Helper_Abstract
     	
         $resurce = Mage::getModel('sales/order')->getResource();
         $select = $resurce->getReadConnection()->select()
-            ->from(array('o' => $resurce->getTable('sales/order')), 'subtotal')
+            ->from(array('o' => $resurce->getTable('sales/order')), 'base_subtotal')
             ->where('o.entity_id=?', $orderId)
         ;
         
         $result = $resurce->getReadConnection()->fetchRow($select);
+		print_r($result); die;
         
-    	if($result['subtotal'] > 0)
-        return round($result['subtotal'],2);
+    	if($result['base_subtotal'] > 0)
+        return round($result['base_subtotal'],2);
         else 
         return 1;
 	}
