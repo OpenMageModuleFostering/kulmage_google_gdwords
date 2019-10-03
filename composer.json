@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/kulmage_google_gdwords",
+    "name": "OpenMageModuleFostering\/kulmage_google_gdwords",
     "type": "magento-module",
     "license": "OSL-v3.0",
     "homepage": "",
     "description": "Kulmage_Adwords is used to add google adwords in magento website",
     "authors": [
-    {
-        "name": "Kuldip",
-        "email": "er.kuldipsinh@gmail.com"
-    }
-],
+        {
+            "name": "Kuldip",
+            "email": "er.kuldipsinh@gmail.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
